@@ -1,100 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>i80solutions – Research in RAG Systems</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-  <style>
-    body {
-      font-family: system-ui, sans-serif;
-      background-color: #f8f9fa;
-    }
-    header {
-      background-color: #002b36;
-      color: #fff;
-      padding: 60px 0;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 3rem;
-    }
-    section {
-      padding: 60px 20px;
-    }
-    .paper-list li {
-      margin-bottom: 0.5rem;
-    }
-    footer {
-      background-color: #212529;
-      color: #aaa;
-      text-align: center;
-      padding: 20px;
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>i80Solutions</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <!-- <link href="./lib/img/favicon.png" rel="icon"> -->
+  <link href="./lib/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-...your_integrity_hash..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <!-- Vendor CSS Files -->
+  <link href="./lib/vendor/aos/aos.css" rel="stylesheet">
+  <link href="./lib/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./lib/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="./lib/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="./lib/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="./lib/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="./lib/css/style.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
 </head>
+
 <body>
 
-  <header>
-    <h1>i80solutions </h1>
-    <p class="lead">Precision-Focused RAG Systems for Private Domains</p>
-  </header>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
 
-  <section>
-    <div class="container">
-      <h2>About</h2>
-      <p>
-        <strong>i80solutions</strong> is a personal research initiative exploring Retrieval-Augmented Generation (RAG)
-        in high-trust, closed-domain applications. The focus is on precision-first architecture, fallback logic, and
-        language-aware embeddings that help AI systems avoid hallucination.
-      </p>
-      <p>
-        I started i80solutions to deepen the practical understanding of RAG systems and Large Language Grounding (LLG)
-        in private-domain environments. Through hands-on experiments, log-driven insights, and systematic evaluations,
-        I explore how RAG can evolve into a reliable foundation for real-world applications — where accuracy, control,
-        and contextual integrity matter most.
-      </p>
-      <p class="text-muted">
-        — Alex Wang<br>
-        <small>October 29, 2024</small>
-      </p>
+      <h1 class="logo"><a href="index.html">i80<span>Solutions</span>.</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt=""></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <!-- <li><a class="nav-link scrollto active" href="./login.php">Home</a></li> -->
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#how">How It Works</a></li>
+          <li><a class="nav-link scrollto" href="#papers">Research Papers </a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+      
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
     </div>
-  </section>
+  </header><!-- End Header -->
+  <main id="main">
+
   
+    <!-- ======= About Section ======= -->
+     <!-- With Drak Background color -->
+    <section id="about" class="about section-1"> 
+      <!-- With white Background color -->
+    <!-- <section id="about" class="about">  -->
+      <!-- With Light blue Background color -->
+    <!--<section id="about" class="about section-bg">-->  
+      <div class="container" data-aos="fade-up">
 
-  <section style="background:#eee;">
-    <div class="container">
-      <h2>Paper Series</h2>
-      <p>We're actively researching RAG systems in private domains. Below is our growing series of open research papers:</p>
-      <ul class="paper-list">
-        <li><strong>1.</strong> Precision-First RAG in Private Domains</li>
-        <li><strong>2.</strong> Language-Aware Embedding Strategies</li>
-        <li><strong>3.</strong> Intent Clustering for Knowledge Access</li>
-        <li><strong>4.</strong> Context Memory & Fallback Design</li>
-        <li><strong>5.</strong> Multilingual Embeddings in RAG</li>
-        <li><strong>6.</strong> Automating Query Rewriting</li>
-        <li><strong>7.</strong> Self-Learning from Usage Logs</li>
-        <li><strong>8.</strong> RAG + Routing + Agent Orchestration</li>
-        <li><strong>9.</strong> Real-World Metrics for RAG Coverage</li>
-        <li><strong>10.</strong> RAG as an Enterprise Architecture Layer</li>
-      </ul>
-      <p>
-        <a href="https://github.com/i80solutions/intelliaorag-research" class="btn btn-dark mt-3">View Full Research Repo</a>
-      </p>
+
+
+
+
+      <div class="" >
+
+        <section>
+            <div class="container">
+    
+
+              <h2>About </h2>
+    
+
+              <p>
+
+                I love cooking - not by the book, but spontaneously, guided by intuition, memory, and whatever ingredients are around. Over the years, I've built up a rich personal history: dishes invented on the fly, flavor combinations that surprised me, moments of improvisation captured in photos, notes, and conversations.
+            </p><p>
+                Lately, I've been asking a new kind of question:
+                What if I could talk to a system that remembers all of that?
+                What if I could ask: “What did I make that winter night with salmon and miso?” or “What did I cook when the fridge was almost empty?”
+            </p><p>
+                I'm now building a personal knowledge base - not of recipes, but of cooking stories - so that AI can recall not just ingredients, but intent, memory, and style. This is about more than food. It's the first step toward a larger dream: creating a system that captures how I think, what I know, and how I speak - something that feels like an extension of my own mind.
+            </p><p>
+                The long-term vision is deeply personal. Imagine an AI that doesn't just answer questions - it reflects you.
+
+                One that understands your thoughts, ideas, preferences, memories - because it's built from your own lived experience. A system that recalls what you've said, what you've cooked, what you've believed, and how you've expressed yourself.
+            </p><p>
+                I'm working toward a kind of virtual “me” - not just for convenience, but for continuity. So that even years from now, I could still talk to myself from the past. So that others could ask, “What would Alex have said?”, and get a meaningful response.
+            </p><p>
+                The same technology behind this - a structured knowledge base powered by Retrieval-Augmented Generation (RAG) - isn't limited to personal use. It can power organizations that need trustworthy, domain-specific memory: guest service platforms, internal support teams, healthcare systems, and more. In these environments, public LLMs tend to hallucinate - because they don't know what only you know.
+         
+             </p><p>
+                This is the mission behind i80solutions, a personal research initiative focused on building AI that is precise, context-aware, and grounded in truth.
+       
+ 
+                This research will explore how we can bridge the expressive power of large language models with the reliability of curated, private-domain knowledge. 
+                Through hands-on experiments, log-driven learning, and systematic design, I'm building a system that prioritizes truth over fluency, precision over speculation, and usefulness over performance.            </p><p>
+                
+                Whether it's remembering a dish, answering a guest's question, or preserving the way someone thinks long after they're gone - this is about building AI that remembers like we do.
+                It's a difficult challenge. But that's the road I'm on.
+
+              </p>
+              <p>
+              -  Alex Wang<br>
+              <small>October 29, 2024</small>
+             </p>
+
+              <div class="section-title" data-aos="fade-up" data-aos-delay="100">
+                <img src="./images/h3.png" alt="iSignage Demo" class="img-fluid" style="border-radius: 3px;">
+              </div>
+
+    
+              </p>
+            </div>
+          </section>
+
+
+    
+  
+      </div>
+    </section><!-- End Section -->
+
+    <section id="how" class="pt-5 pb-5  bg-light">
+        <div class="container">
+          <div class="">
+            <h2>How It Works</h2>
+            <p>i80solutions combines a carefully curated knowledge base, vector search optimized for real-world queries, and generation guardrails to deliver factual, context-aware answers.</p>
+          </div>
+      
+          <div class="row">
+      
+        
+      
+    
+            <div class="col-md-4 mb-4">
+              <div class="card border-0 shadow-sm h-100 text-center">
+                <div class="card-body">
+                  <div class="icon mb-3" style="font-size: 2rem; color:rgb(22, 52, 85);">
+                    <i class="fa-solid fa-brain"></i>
+                  </div>
+                  <h5 class="card-title">Knowledge-first design</h5>
+                  <ol class="text-start px-3">
+                  <li> Organizes fragmented info into retrievable, structured formats.</li>
+                  <li> Prioritizes clarity over coverage - it only answers what it truly knows.</li>
+                  <li> Designed not for generality, but for precision in your domain.</li>
+                  </ol>
+                  <p class="highlight-text mt-3">Tailored for private domains where hallucination is unacceptable</p>
+                </div>
+              </div>
+            </div>
+      
+      
+      
+           
+                <div class="col-md-4 mb-4">
+              <div class="card border-0 shadow-sm h-100 text-center">
+                <div class="card-body">
+                  <div class="icon mb-3" style="font-size: 2rem; color:rgb(22, 52, 85);">
+                    <i class="fa-solid fa-vector-square"></i>
+                  </div>
+                  <h5 class="card-title">Query-tuned embeddings</h5>
+                  <ol class="text-start px-3">
+                  <li>Embeddings are generated from real-world, conversational phrasing.</li>
+                  <li>Handles synonyms, rewordings, and partial questions with accuracy.</li>
+                  <li>Learns and expands from actual user logs to fill coverage gaps over time</li>
+                  </ol>
+                  <p class="highlight-text mt-3">Optimized for how people actually ask.</p>
+                </div>
+              </div>
+            </div>
+      
+           
+            <div class="col-md-4 mb-4">
+              <div class="card border-0 shadow-sm h-100 text-center">
+                <div class="card-body">
+                  <div class="icon mb-3" style="font-size: 2rem; color:rgb(22, 52, 85);">
+                    <i class="fa-solid fa-language"></i>
+                  </div>
+      
+                  <h5 class="card-title">Precision-first generation</h5>
+                  <ol class="text-start px-3">
+                    <li>Produces natural language responses only when source material supports it.</li>
+                    <li>Responds with a polite “I'm not sure” when the knowledge isn't there.</li>
+                    <li>Maintains alignment with source intent - no speculation</li>
+      
+                  </ol>
+                  <p class="highlight-text mt-3" >Answers only when it's sure.</p>
+                </div>
+              </div>
+            </div>
+      
+          </div>
+
+          <div class="container">
+
+            <p><strong>Want to collaborate?</strong> I work with people who are exploring meaningful applications of domain-specific AI.</p>
+            <ul>
+     
+              <li>Apply private-domain AI for real-life use cases</li>
+              <li>Co-develop integrations with your existing tools or knowledge systems</li>
+              <li>Collaborate on white papers, prototypes, or case studies</li>
+             
+
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+      <section id="papers" class="section-1">
+        <div class="container">
+          <h2>Research Papers</h2>
+          <p></p>I'm actively researching Retrieval-Augmented Generation (RAG) in private-domain settings. Below is a growing series of open papers documenting the journey.</p>
+          <ul>
+            <li>1. Precision-First RAG in Private Domains</li>
+            <li>2. Language-Aware Embedding Strategies</li>
+            <li>3. Intent Clustering for Knowledge Access</li>
+            <li>4. Context Memory & Fallback Design</li>
+            <li>5. Multilingual Embeddings in RAG</li>
+            <li>6. Automating Query Rewriting</li>
+            <li>7. Self-Learning from Usage Logs</li>
+            <li>8. RAG + Routing + Agent Orchestration</li>
+            <li>9. Real-World Metrics for RAG Coverage</li>
+            <li>10. RAG as an Enterprise Architecture Layer</li>
+          </ul>
+          <p><a href="https://github.com/i80solutions/intelliaorag-research" class="btn btn-dark mt-2">View Research Repository</a></p>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact">
+        <div class="container">
+          <h2>Contact</h2>
+          <p>Want to collaborate or learn more?
+            <br>
+          Email me at <a href="mailto:alex@i80.com">alex@i80.com</a></p>
+        </div>
+      </section>
+
+ 
+ 
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container py-4">
+    <div class="copyright">
+      &copy; 2025 Copyright <strong><span>i80Solutions</span></strong>. All Rights Reserved
+  </div>
     </div>
-  </section>
+  </footer><!-- End Footer -->
 
-  <section>
-    <div class="container">
-      <h2>Contact</h2>
-      <p>Want to collaborate or learn more?</p>
-      <p>Email us at <a href="mailto:research@i80.com">research@i80solutions.com</a></p>
-    </div>
-  </section>
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <footer>
-    <p>&copy; 2024 i80solutions – All rights reserved.</p>
-  </footer>
+  <!-- Vendor JS Files -->
+  <script src="./lib/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="./lib/vendor/aos/aos.js"></script>
+  <script src="./lib/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./lib/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="./lib/vendor/swiper/swiper-bundle.min.js"></script>
+  <!-- <script src="./lib/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="./lib/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="./lib/vendor/waypoints/noframework.waypoints.js"></script> -->
+  <script src="./lib/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="./lib/js/main.js"></script>
 
 </body>
+
 </html>
