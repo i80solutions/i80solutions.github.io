@@ -84,3 +84,41 @@ a:hover {
   background-color: #0f172a;
   color: #e2e8f0;
 }
+
+@media (max-width: 576px) {
+  section,
+  .section-intro,
+  .services,
+  .bg-light,
+  .bg-white {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  h2, h5 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .card {
+    margin-bottom: 1.5rem;
+  }
+
+  img.img-fluid {
+    max-height: 150px !important;
+    object-fit: cover;
+  }
+
+  #started img {
+    float: none !important;
+    display: block;
+    margin: 1rem auto;
+    width: 100% !important;
+    max-width: 300px;
+  }
+}
