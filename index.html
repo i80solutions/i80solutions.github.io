@@ -157,26 +157,24 @@
       <div class="container">
         <h2 class="mb-4">How It Works</h2>
         <p>
-          Think of a RAG-based AI system as answering a question the way a human would.
+          I think the best way to explain how a Retrieval-Augmented Generation (RAG) system works is with an analogy - how a human answers a question.
+          
         </p>
         <p>
-          When someone asks you something, you typically:
+          Imagine you're helping a friend answer a question. First, you think back through your <strong>memory</strong> to find anything relevant - that's <strong>retrieval</strong>. Then, based on what you remember, you put the answer together in your own words - that's <strong>generation</strong>.
         </p>
-        <ul>
-          <li><strong>Match the question to your memory</strong> - recalling relevant facts or past experiences</li>
-          <li><strong>Retrieve what you know</strong> - pulling out details that relate to the question</li>
-          <li><strong>Think and respond</strong> - quickly if it's simple, or more carefully if it's complex</li>
-        </ul>
-        <p>
-          In a RAG-based AI system, the process works in a similar way:
+        <p>That's essentially what a RAG system does. It combines a curated <strong>knowledge base</strong> (its memory) with the language ability of an LLM (its voice). The <strong>retriever</strong> pulls in relevant information, and the <strong>generator</strong> - powered by the <strong>LLM</strong> - crafts a clear, conversational response. 
+
         </p>
+
+   
         <ul>
-          <li><strong>Match the question to the knowledge base</strong> - using vector search to compare the query with stored embeddings</li>
-          <li><strong>Retrieve relevant content</strong> - pulling snippets that are semantically related and have high similarity scores</li>
+          <li><strong>Curate a knowledge base (memory)</strong> - using your private domain-specific content</li>
+          <li><strong>Retrieve relevant content</strong> - pulling in snippets that are semantically related to the question and have high similarity scores.</li>
           <li><strong>Orchestrate a response</strong>:
             <ul>
               <li>If the similarity score is high and the answer is clear, it returns the response directly</li>
-              <li>If the similarity is lower or the question is more nuanced, it sends the retrieved context to the LLM - instructing it to stay grounded in the facts and avoid hallucination</li>
+              <li>If the similarity is lower or the question is more nuanced, it sends the retrieved content to the LLM - instructing it to stay grounded in the facts and avoid hallucination</li>
             </ul>
           </li>
         </ul>
@@ -234,7 +232,7 @@
                   <i class="fa-solid fa-language"></i>
                 </div>
                 <h5 class="card-title">LLM Generator</h5>
-                <p class=" mt-3">Produces answers in natural language, optionally using the retrieved content as context for more thoughtful, accurate responses.</p>
+                <p class=" mt-3">Produces answers in natural language,  using the retrieved content as context for thoughtful, accurate responses.</p>
               </div>
             </div>
           </div>
