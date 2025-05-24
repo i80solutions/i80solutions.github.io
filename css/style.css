@@ -92,7 +92,7 @@ a:hover {
   .bg-light,
   .bg-white {
     padding-top: 1rem !important;
-    padding-bottom: 1rem !important;
+    padding-bottom: 0.5rem !important;
   }
 
   .container {
@@ -102,7 +102,7 @@ a:hover {
 
   h2, h5 {
     margin-top: 0.5rem !important;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
 
   .card {
