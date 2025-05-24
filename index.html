@@ -83,12 +83,12 @@
   <div class="container">
     <h2 class="mb-4">The Road to i80</h2>
     <div class="section-title" data-aos="fade-up" data-aos-delay="100">
-      <img src="./images/i80c.png" alt="i80 metaphor for AI" class="img-fluid" style="border-radius:5px; width: 100%; height: auto; max-height: 25vh; object-fit: cover;">
+      <img src="./images/i80d.png" alt="i80 metaphor for AI" class="img-fluid" style="border-radius:5px; width: 100%; height: auto; max-height: 25vh; object-fit: cover;">
     </div>
 
     <p>I love to cook. Not by the book, but with intuition, memory, and whatever ingredients are at hand. Over the years, I've built a rich personal archive: dishes invented on the fly, surprising flavor combinations, and moments of improvisation captured in photos, notes, and conversations.</p>
 
-    <p>Then, in January 2023, I encountered ChatGPT. I was blown away by its ability to answer questions and generate ideas. I'd ask about cuisines, techniques, or flavor pairings, and the responses were impressive. But when I asked, "What did I cook that night with salmon and miso?", the reply was blunt: "I don't have access to your personal cooking history." For all their brilliance, these large language models (LLMs) didn't know my stories. They couldn't access the unique experiences, preferences, and memories that make me who I am.</p>
+    <p>Then, in January 2023, I encountered ChatGPT. I was blown away by its ability to answer questions and generate ideas. I'd ask about cuisines, techniques, or flavor pairings, and the responses were impressive. But when I asked, "What did I cook that night with salmon and miso?", the reply came through as: "I don't have access to your personal cooking history." For all their brilliance, these large language models (LLMs) didn't know my stories. They couldn't access the unique experiences, preferences, and memories that make me who I am.</p>
 
     <p>That's when it hit me: What if I could build an AI that feels like an LLM but knows what I know? Not a generic model trained on the internet, but a personal system capturing my cooking stories, my thought processes, my unique way of seeing the world. I imagined an AI that could answer, "What would I have cooked with those ingredients?" or even "How would I have approached that problem?" - not based on generic data, but on my own lived experience.</p>
 
@@ -108,14 +108,40 @@
       </div>
     </section><!-- End Section -->
 
-
+    <section id="started" class="py-5 bg-light text-dark">
+      <div class="container">
+        <h2 class="mb-4">How I Got Started</h2>
+    
+        <p>
+          <img src="./images/person1s.png" alt="How I Got Started " style="float: right; width: 350px; margin-left: 20px; margin-bottom: 10px; border-radius: 3px;">
+          I jumped in after the idea struck me - despite not knowing much about large language models. 
+          Back in graduate school, I studied expert systems, AI, and neural networks, but LLMs were a whole new world. 
+          I knew I'd need Python, but at that point, I hadn't written a single line of it.
+        </p>
+    
+        <p>
+          Thankfully, there's an abundance of resources online - and even better, we now have LLMs to help along the way. 
+          It didn't take long for me to set up my initial Python environment using VS Code. And just like that, I was on my way.
+        </p>
+    
+        <p>
+          At first, I tried downloading open-source LLMs and fine-tuning them with my own knowledge base. 
+          That quickly turned into a dead end. Fine-tuning is resource-intensive, hard to iterate, and - most importantly -
+          poorly suited for domain knowledge that changes frequently or needs precise control. 
+          It simply wasn't the right tool for a task where accuracy, flexibility, and explainability matter.
+          Eventually, I came across the concept of Retrieval-Augmented Generation (RAG), and everything started to make more sense.
+        </p>
+    
+      </div>
+    </section>
+    
 
 
     <section id="how" class="py-5 bg-white text-dark">
       <div class="container">
         <h2 class="mb-4">How It Works</h2>
         <p>
-          Think of the AI system as answering a question the way a human would.
+          Think of a RAG-based AI system as answering a question the way a human would.
         </p>
         <p>
           When someone asks you something, you typically:
@@ -151,7 +177,13 @@
       <div class="container">
         <div>
           <h2>Key Building Blocks</h2>
-          <p>At the heart of my solution is a modular system that mirrors how humans think and respond. A curated knowledge base acts as memory. A retriever finds what’s relevant. An LLM expresses it in clear language. And an orchestrator decides how to respond - either directly or by synthesizing information. Together, these blocks enable precise, trustworthy, and explainable answers.</p>
+          <p>
+            It didn't take me long to piece together the basic building blocks and get things up and running. At the heart of what I built is a modular system - one that reflects how we, as humans, think and respond. I set up a curated knowledge base to serve as memory. A retriever fetches the most relevant information based on your question. 
+            An LLM helps express it all in natural, clear language. And an orchestrator - something I fine-tuned carefully - decides whether to respond directly or synthesize information from multiple sources.
+          </p>
+          <p>
+            Once I had these core parts working together, things really started to click. The setup gave me a solid foundation to start experimenting - exactly the kind of system I had envisioned from the very beginning.
+          </p>
         </div>
     
         <div class="row">
@@ -211,11 +243,30 @@
         <div class="container" data-aos="fade-up">
   
           <h2 class="mb-4">Key Challenges</h2>
+
           <p>
-            Building robust RAG systems involves tackling challenges like accurately interpreting user questions, ensuring reliable retrieval, and maintaining consistent embedding quality. Additionally, systems must manage knowledge base accuracy, multilingual performance, and control hallucination to provide trustworthy answers.
+            The concept sounded simple - until I actually started building and testing my initial knowledge base.
+          
+            One of the first things I had to understand was how the system makes sense of conversational language. It does this through a technique called <em>embeddings</em>. In simple terms, embeddings convert text into numbers (technically, vectors) - representations that capture meaning, not just literal words. This allows the system to compare concepts and retrieve content that's semantically relevant to the question being asked, even when the wording or language differs.
           </p>
+          
+          <p>
+            With that foundation in place, a new challenge emerged: what content should I embed? At first, I followed the conventional method of breaking documents into evenly sized chunks. But in practice, this approach often missed the essence of what users were really asking. What turned out to be far more effective - especially in a focused domain - was creating <em>query-focused embeddings</em> that align more closely with the actual questions people tend to ask. That shift significantly improved the system's performance and reliability.
+          
+            It laid the foundation for my solution. Of course, embeddings are just one part of the puzzle - many other challenges still remain.
+          </p>
+
+
   
           <div class="row">
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+              <div class="icon-box service-item  bg-light" style="border-radius: 5px";>
+     
+                <h4><a href="">Embedding Quality </a></h4>
+                <p>Poor or inconsistent embedding quality due to vague text, evolving language, or model drift. Embedding mismatches lead to retrieval errors - especially over time</p>
+              </div>
+            </div>
 
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch " data-aos="zoom-in" data-aos-delay="100">
               <div class="icon-box service-item  bg-light" style="border-radius: 5px";>
@@ -225,13 +276,7 @@
               </div>
             </div>
   
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
-              <div class="icon-box service-item  bg-light" style="border-radius: 5px";>
-     
-                <h4><a href="">Embedding Quality </a></h4>
-                <p>Poor or inconsistent embedding quality due to vague text, evolving language, or model drift. Embedding mismatches lead to retrieval errors - especially over time</p>
-              </div>
-            </div>
+
 
 
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
