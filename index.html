@@ -163,23 +163,23 @@
         <p>
           Imagine you're helping a friend answer a question. First, you think back through your <strong>memory</strong> to find anything relevant - that's <strong>retrieval</strong>. Then, based on what you remember, you put the answer together in your own words - that's <strong>generation</strong>.
         </p>
-        <p>That's essentially what a RAG system does. It combines a curated <strong>knowledge base</strong> (its memory) with the language ability of an LLM (its voice). The <strong>retriever</strong> pulls in relevant information, and the <strong>generator</strong> - powered by the <strong>LLM</strong> - crafts a clear, conversational response. 
+        <p>That's essentially what a RAG system does. It has a curated <strong>knowledge base</strong> (its memory). The <strong>retriever</strong> pulls in the most relevant information, and the <strong>orchestrator</strong> decides how to respond - either directly or by calling on an LLM to help craft a clear, conversational answer.
 
         </p>
 
    
         <ul>
-          <li><strong>Curate a knowledge base (memory)</strong> - using your private domain-specific content</li>
-          <li><strong>Retrieve relevant content</strong> - pulling in snippets that are semantically related to the question and have high similarity scores.</li>
+          <li><strong>Curate a knowledge base (memory)</strong> - Use your private, domain-specific content—facts, stories, documentation - to build a structured foundation.</li>
+          <li><strong>Retrieve relevant content</strong> - When a question is asked, the retriever searches the knowledge base for snippets that are semantically related and have high similarity scores.</li>
           <li><strong>Orchestrate a response</strong>:
             <ul>
-              <li>If the similarity score is high and the answer is clear, it returns the response directly</li>
-              <li>If the similarity is lower or the question is more nuanced, it sends the retrieved content to the LLM - instructing it to stay grounded in the facts and avoid hallucination</li>
+              <li>If the similarity score is high and the answer is straightforward, it returns the response directly.</li>
+              <li>If the similarity is lower or the question is more nuanced, it sends the retrieved content to the LLM - along with instructions to stay grounded in the facts and avoid hallucination.</li>
             </ul>
           </li>
         </ul>
         <p class="mt-4">
-          The result? An AI that doesn't guess - it <strong>remembers</strong>, <strong>retrieves</strong>, and <strong>responds thoughtfully</strong>, just like a well-informed person.
+          The result? An AI that doesn't guess - it remembers, retrieves, and responds, like someone who knows what they're talking about.
         </p>
       </div>
 
