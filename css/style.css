@@ -1,7 +1,17 @@
 
+
+
 body {
-  font-family: 'Inter', sans-serif;
+  background-color: #fffefc;
+  color: #403c3a;
+  font-family: 'Inter','Georgia', serif;
+  line-height: 1.7;
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 0;
 }
+
+
 
 .section-1{
   background: #1e3c6f;
@@ -64,3 +74,13 @@ a:hover {
  
 }
 
+.section-intro {
+  background-color: #0f172a;
+  color: #e2e8f0;
+
+}
+
+.section-last{
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
